@@ -1,2 +1,2 @@
 # Vexion
-Technologies: Prereact, Vite, Emotion, Typescript
+Technologies: Preact, Vite, Emotion, Typescript
