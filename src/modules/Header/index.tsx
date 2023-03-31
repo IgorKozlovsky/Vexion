@@ -1,3 +1,4 @@
+import BurgerButton from 'src/components/BurgerButton'
 import Logo from 'src/components/Logo'
 import {
   StyledLinks,
@@ -6,20 +7,25 @@ import {
   TextContainer,
 } from 'src/modules/Header/styles'
 import Button from 'src/ui/Button'
+import useHeader from 'src/modules/Header/useHeader'
+import { links } from 'src/modules/Header/constants'
 
 const Header = (): JSX.Element => {
+  const { openNavigation, handleMenu } = useHeader()
+
   return (
-    <HeaderWrapper flexDirection="row" justifyContent="space-between">
+    <HeaderWrapper
+      flexDirection="row"
+      justifyContent="space-between"
+      alignItems="center"
+    >
       <Logo />
-      <TextContainer
-        flexDirection="row"
-        justifyContent="space-between"
-        alignItems="center"
-      >
-        <StyledLinks variant="subText">Pricing</StyledLinks>
-        <StyledLinks variant="subText">Features</StyledLinks>
-        <StyledLinks variant="subText">Integrations</StyledLinks>
-        <StyledLinks variant="subText">Company</StyledLinks>
+      <TextContainer open={openNavigation} as="nav">
+        {links.map(({ id, url, text }) => (
+          <StyledLinks key={id} variant="subText">
+            {text}
+          </StyledLinks>
+        ))}
       </TextContainer>
       <ButtonContainer
         flexDirection="row"
@@ -29,6 +35,7 @@ const Header = (): JSX.Element => {
         <Button variant="dark">Sign in</Button>
         <Button>Sing up</Button>
       </ButtonContainer>
+      <BurgerButton open={openNavigation} onClick={() => handleMenu(true)} />
     </HeaderWrapper>
   )
 }
