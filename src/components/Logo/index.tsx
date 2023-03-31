@@ -1,6 +1,6 @@
 import Flex from 'src/ui/Flex'
 import Image from 'src/ui/Image'
-import { pathToLogo } from 'src/components/Logo/constants'
+import { pathToLogo } from 'src/constants'
 import Text from 'src/ui/Text'
 
 const Logo = (): JSX.Element => (

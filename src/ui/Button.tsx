@@ -28,7 +28,7 @@ const LightButton = styled(StyledBase)`
     box-shadow: ${theme.shadows.buttonWhite};
     background: url(src/assets/backgroundBlur.png), #ffffff;
     background-repeat: no-repeat;
-    background-position: 32% 30%;
+    background-position: 30% 50%;
   `}
 `
 

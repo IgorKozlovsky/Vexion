@@ -20,6 +20,12 @@ const SubText = styled(StyledBase)(
 `,
 )
 
+const SubTextSmaller = styled(SubText)(
+  ({ theme }) => `
+      font-size: ${theme.fontSizes.smaller};
+  `,
+)
+
 const BannersSmallText = styled(StyledBase)(
   ({ theme }) => `
       font-size: ${theme.fontSizes.bannerSmall};
@@ -49,7 +55,7 @@ const LogoText = styled(StyledBase)(
 
 type TextTypes = StyledPropsTypes & {
   children: ReactNode
-  variant?: 'subText' | 'banner' | 'text' | 'base' | 'logo'
+  variant?: 'subText' | 'banner' | 'text' | 'base' | 'logo' | 'subTextSmaller'
   isLarge?: boolean
 }
 
@@ -62,6 +68,7 @@ const Text = ({
   const variants = {
     text: PlainText,
     subText: SubText,
+    subTextSmaller: SubTextSmaller,
     banner: isLarge ? BannersBigText : BannersSmallText,
     base: StyledBase,
     logo: LogoText,
