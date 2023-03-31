@@ -1,8 +1,10 @@
-const theme = {
+import { Theme } from '@emotion/react'
+
+const theme: Theme = {
   colors: {
-    background: '#1E1E1E',
-    lightText: '#FFFFFF',
-    blackText: '#000000',
+    background: '#05050A',
+    light: '#FFFFFF',
+    black: '#000000',
     subText: '#7F7F90',
     activeSubText: '#9A9AA7',
   },
@@ -27,6 +29,7 @@ const theme = {
     xxs: '4px',
     xs: '8px',
     sm: '16px',
+    xm: '24px',
     md: '32px',
     lg: '64px',
     xl: '128px',

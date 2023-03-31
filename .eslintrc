@@ -9,8 +9,7 @@
     "plugin:react/recommended",
     "airbnb",
     "prettier/prettier",
-    "plugin:prettier/recommended",
-    "next"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -30,7 +29,9 @@
     "JSX": true
   },
   "rules": {
+    "import/no-unresolved": "off",
     "@emotion/jsx-import": "error",
+    "@emotion/pkg-renaming": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-shadow": "off",

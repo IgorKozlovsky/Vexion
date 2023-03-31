@@ -4,8 +4,8 @@ declare module '@emotion/react' {
   export interface Theme extends Record<string, any> {
     colors: {
       background: string
-      lightText: string
-      blackText: string
+      light: string
+      black: string
       subText: string
       activeSubText: string
     }
@@ -30,6 +30,7 @@ declare module '@emotion/react' {
       xxs: string
       xs: string
       sm: string
+      xm: string
       md: string
       lg: string
       xl: string
