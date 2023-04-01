@@ -49,9 +49,9 @@ export const StyledGradient = styled(Box)`
   ${({ theme }) => `
   position: absolute;
   width: calc(100vw + 200px);
-  height: 800px;
+  height: 720px;
   right: -100px;
-  top: 800px;
+  top: 720px;
   z-index: 1;
   background: #05050a;
   opacity: 0.7;
