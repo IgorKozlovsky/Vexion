@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import Box from 'src/ui/Box'
 
+import Box from 'src/ui/Box'
 import Flex from 'src/ui/Flex'
 
 export const FooterWrapper = styled(Flex)`

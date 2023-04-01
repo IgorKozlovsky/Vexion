@@ -15,5 +15,6 @@ export const globalStyles = css`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Archivo Black', sans-serif;
+    overflow-x: hidden;
   }
 `

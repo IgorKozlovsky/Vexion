@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+
 import Box from 'src/ui/Box'
 
 type FlexTypes = {

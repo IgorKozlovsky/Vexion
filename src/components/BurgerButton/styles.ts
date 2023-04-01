@@ -10,7 +10,7 @@ type BurgerButtonPropsType = {
 export const BurgerButtonStyles = styled(Box)<BurgerButtonPropsType>`
   ${({ theme, open }) => css`
     position: absolute;
-    top: 59px;
+    top: 50px;
     right: 10px;
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+import Banner from 'src/modules/Banner'
 import Footer from 'src/modules/Footer'
 import Header from 'src/modules/Header'
 import Main from 'src/ui/Main'
@@ -7,7 +8,9 @@ const App = (): JSX.Element => {
   return (
     <Wrapper>
       <Header />
-      <Main>a</Main>
+      <Main>
+        <Banner />
+      </Main>
       <Footer />
     </Wrapper>
   )

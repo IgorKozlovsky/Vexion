@@ -10,11 +10,11 @@ export const ButtonContainer = styled(Flex)`
 `
 
 export const HeaderWrapper = styled(Flex)`
-  padding: 15px 20px 0px 20px;
+  padding: 15px 20px 30px 20px;
   flex-direction: column;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    padding: 15px 50px 0px 50px;
+    padding: 15px 50px 30px 50px;
     flex-direction: row;
   }
 `
@@ -46,7 +46,7 @@ export const TextContainer = styled(Flex)<LinkMenuType>`
     background-color: ${theme.colors.background};
     overflow: hidden;
     transition: 0.2s;
-
+    z-index: 1000;
     @media (min-width: ${theme.breakpoints.lg}) {
       position: static;
       flex-direction: row;
