@@ -2,6 +2,7 @@ import Flex from 'src/ui/Flex'
 import Image from 'src/ui/Image'
 import { pathToLogo } from 'src/constants'
 import Text from 'src/ui/Text'
+import { FontVariants } from 'src/enums'
 
 const Logo = (): JSX.Element => (
   <Flex
@@ -11,7 +12,7 @@ const Logo = (): JSX.Element => (
     }}
   >
     <Image alt="logo" src={pathToLogo} width="73px" />
-    <Text variant="logo">Vexion</Text>
+    <Text variant={FontVariants.logo}>Vexion</Text>
   </Flex>
 )
 
