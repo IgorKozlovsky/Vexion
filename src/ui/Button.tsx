@@ -1,8 +1,11 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
-import { ReactNode } from 'react'
+import { CSSProperties, ReactNode } from 'react'
+
+import { pathToBlur } from 'src/constants'
 
 type ButtonPropsTypes = {
+  style?: CSSProperties
   children: ReactNode
   variant?: 'dark' | 'light'
 }
@@ -26,7 +29,7 @@ const LightButton = styled(StyledBase)`
     background-color: ${theme.colors.light};
     color: ${theme.colors.black};
     box-shadow: ${theme.shadows.buttonWhite};
-    background: url(src/assets/backgroundBlur.png), #ffffff;
+    background: url(${pathToBlur}), #ffffff;
     background-repeat: no-repeat;
     background-position: 30% 50%;
   `}

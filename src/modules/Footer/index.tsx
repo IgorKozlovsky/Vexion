@@ -1,4 +1,5 @@
 import { pathToLogo } from 'src/constants'
+import { FontVariants } from 'src/enums'
 import {
   FooterTextBox,
   FooterTextWrapper,
@@ -33,19 +34,19 @@ const Footer = (): JSX.Element => {
       </BoxLogo>
       <FooterTextWrapper justifyContent="space-between">
         <FooterTextBox justifyContent="space-evenly">
-          <Text variant="subTextSmaller">Terms of Use</Text>
-          <Text variant="subTextSmaller">Privacy Policy</Text>
-          <Text variant="subTextSmaller">Contact</Text>
-          <Text variant="subTextSmaller">Blog</Text>
+          <Text variant={FontVariants.subTextSmaller}>Terms of Use</Text>
+          <Text variant={FontVariants.subTextSmaller}>Privacy Policy</Text>
+          <Text variant={FontVariants.subTextSmaller}>Contact</Text>
+          <Text variant={FontVariants.subTextSmaller}>Blog</Text>
         </FooterTextBox>
         <Flex justifyContent="center">
           <Button>Get the app</Button>
         </Flex>
         <FooterTextBox justifyContent="space-evenly">
-          <Text variant="subTextSmaller">Pricign</Text>
-          <Text variant="subTextSmaller">Features</Text>
-          <Text variant="subTextSmaller">Integrations</Text>
-          <Text variant="subTextSmaller">Company</Text>
+          <Text variant={FontVariants.subTextSmaller}>Pricign</Text>
+          <Text variant={FontVariants.subTextSmaller}>Features</Text>
+          <Text variant={FontVariants.subTextSmaller}>Integrations</Text>
+          <Text variant={FontVariants.subTextSmaller}>Company</Text>
         </FooterTextBox>
       </FooterTextWrapper>
       <Flex
@@ -54,7 +55,7 @@ const Footer = (): JSX.Element => {
           width: '100%',
         }}
       >
-        <Text variant="subTextSmaller">Copyright © 2023</Text>
+        <Text variant={FontVariants.subTextSmaller}>Copyright © 2023</Text>
       </Flex>
     </FooterWrapper>
   )

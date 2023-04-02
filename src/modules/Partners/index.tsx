@@ -5,8 +5,9 @@ import { patners } from 'src/modules/Partners/constants'
 import Image from 'src/ui/Image'
 import { pathToAssets } from 'src/constants'
 import { PartnersWrapper } from 'src/modules/Partners/styles'
+import { FontVariants } from 'src/enums'
 
-const Partners = () => {
+const Partners = (): JSX.Element => {
   return (
     <Section>
       <Flex
@@ -17,7 +18,7 @@ const Partners = () => {
           alignItems: 'center',
         }}
       >
-        <Text variant="subText">These companies work with us</Text>
+        <Text variant={FontVariants.subText}>These companies work with us</Text>
         <PartnersWrapper>
           {patners.map(({ id, url }) => (
             <Image

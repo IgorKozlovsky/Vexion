@@ -1,4 +1,8 @@
 import { css } from '@emotion/react'
+import styled from '@emotion/styled'
+
+import { pathToBlur } from 'src/constants'
+import Text from 'src/ui/Text'
 
 export const globalStyles = css`
   @font-face {
@@ -17,4 +21,13 @@ export const globalStyles = css`
     font-family: 'Archivo Black', sans-serif;
     overflow-x: hidden;
   }
+`
+
+export const StyledImageText = styled(Text)`
+  background-image: url(${pathToBlur});
+  background-size: 200%;
+  background-position: 50% 50%;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
 `

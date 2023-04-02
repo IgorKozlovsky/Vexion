@@ -9,6 +9,7 @@ import {
 import Button from 'src/ui/Button'
 import useHeader from 'src/modules/Header/useHeader'
 import { links } from 'src/modules/Header/constants'
+import { FontVariants } from 'src/enums'
 
 const Header = (): JSX.Element => {
   const { openNavigation, handleMenu } = useHeader()
@@ -22,7 +23,7 @@ const Header = (): JSX.Element => {
       <Logo />
       <TextContainer open={openNavigation} as="nav">
         {links.map(({ id, url, text }) => (
-          <StyledLinks key={id} variant="subText">
+          <StyledLinks key={id} variant={FontVariants.subText}>
             {text}
           </StyledLinks>
         ))}

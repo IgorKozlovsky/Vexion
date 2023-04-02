@@ -1,7 +1,8 @@
 import { render } from 'preact'
+import { Global, ThemeProvider } from '@emotion/react'
+
 import App from 'src/pages/App'
 import theme from 'src/theme'
-import { Global, ThemeProvider } from '@emotion/react'
 import { globalStyles } from 'src/styles'
 
 render(

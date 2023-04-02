@@ -17,15 +17,6 @@ export const ShadowText = styled(Text)`
   text-align: center;
 `
 
-export const ImageText = styled(Text)`
-  background-image: url(${pathToBlur});
-  background-size: 200%;
-  background-position: 50% 50%;
-  background-clip: text;
-  color: transparent;
-  text-align: center;
-`
-
 export const StyledA = styled(Text)`
   ${({ theme }) => `
     position: absolute;
@@ -48,10 +39,10 @@ export const StyledA = styled(Text)`
 export const StyledGradient = styled(Box)`
   ${({ theme }) => `
   position: absolute;
-  width: calc(100vw + 200px);
-  height: 720px;
-  right: -100px;
-  top: 720px;
+  width: calc(100vw);
+  height: 800px;
+  right: 0px;
+  top: 700px;
   z-index: 1;
   background: #05050a;
   opacity: 0.7;
@@ -64,11 +55,13 @@ export const StyledGradient = styled(Box)`
 export const BackgroundLayer = styled(Image)`
   ${({ theme }) => `
   position: absolute;
-  right: -100px;
-  top: 800px;
-  width: calc(100vw + 700px);
+  right: 0px;
+  top: 700px;
+  max-width: 100vw;
+  width: 100%;
   height: 800px;
   z-index: 0;
+  object-fit: cover;
   display: none;
   @media (min-width: ${theme.breakpoints.lg}) {
     display: block;

@@ -3,13 +3,14 @@ import Section from 'src/ui/Section'
 import Text from 'src/ui/Text'
 import {
   BackgroundLayer,
-  ImageText,
   ShadowText,
   StyledA,
   StyledGradient,
 } from 'src/modules/Banner/styles'
 import Button from 'src/ui/Button'
 import Image from 'src/ui/Image'
+import { StyledImageText } from 'src/styles'
+import { FontVariants } from 'src/enums'
 
 const Banner = (): JSX.Element => {
   return (
@@ -25,29 +26,29 @@ const Banner = (): JSX.Element => {
         }}
       >
         <Text
-          variant="banner"
+          variant={FontVariants.banner}
           isLarge
           isUppercase
           style={{
             textAlign: 'center',
           }}
         >
-          <StyledA variant="banner" as="span">
+          <StyledA variant={FontVariants.banner} as="span">
             A{' '}
           </StyledA>
           Universal Application
         </Text>
-        <Text variant="banner" isUppercase>
+        <Text variant={FontVariants.banner} isUppercase>
           To Manage Your
         </Text>
-        <ImageText variant="banner" isLarge isUppercase>
+        <StyledImageText variant={FontVariants.banner} isLarge isUppercase>
           Satellite Internet
-          <ShadowText variant="banner" isLarge isUppercase>
+          <ShadowText variant={FontVariants.banner} isLarge isUppercase>
             Satellite Internet
           </ShadowText>
-        </ImageText>
+        </StyledImageText>
         <Text
-          variant="subText"
+          variant={FontVariants.subText}
           style={{
             textAlign: 'center',
           }}
@@ -73,7 +74,7 @@ const Banner = (): JSX.Element => {
         </Flex>
         <StyledGradient />
         <BackgroundLayer
-          src="src/assets/backgroundLayer.png"
+          src="src/assets/backgrounds/backgroundLayer.png"
           alt="backgroundLayer"
         />
       </Flex>

@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 25575",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tsc": "tsc --incremental",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
+    "cross-env": "^7.0.3",
     "emotion": "^11.0.0",
     "preact": "^10.13.2"
   },

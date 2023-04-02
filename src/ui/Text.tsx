@@ -4,6 +4,8 @@ import { css, jsx } from '@emotion/react'
 import styled from '@emotion/styled'
 import { CSSProperties, ElementType, ReactNode } from 'react'
 
+import { FontVariants } from 'src/enums'
+
 type StyledPropsTypes = {
   color?: string
   fontSize?: string
@@ -71,9 +73,33 @@ const LogoText = styled(StyledBase)(
     `,
 )
 
+const LargestText = styled(StyledBase)(
+  ({ theme }) => `
+      @media (min-width: ${theme.breakpoints.lg}) {
+        font-size: ${theme.fontSizes.bannerSmall};
+      }
+        font-size: ${theme.fontSizes.largest};
+        color: ${theme.colors.light};
+    `,
+)
+
+const LargeText = styled(StyledBase)(
+  ({ theme }) => `
+        font-size: ${theme.fontSizes.large};
+        color: ${theme.colors.light};
+    `,
+)
+
+const SmallestText = styled(StyledBase)(
+  ({ theme }) => `
+        font-size: ${theme.fontSizes.smallest};
+        color: ${theme.colors.subText};
+    `,
+)
+
 type TextTypes = StyledPropsTypes & {
   children: ReactNode
-  variant?: 'subText' | 'banner' | 'text' | 'base' | 'logo' | 'subTextSmaller'
+  variant?: FontVariants
   isLarge?: boolean
   isUppercase?: boolean
   as?: ElementType<any> | undefined
@@ -82,7 +108,7 @@ type TextTypes = StyledPropsTypes & {
 
 const Text = ({
   children,
-  variant = 'base',
+  variant = FontVariants.base,
   isLarge = false,
   isUppercase = false,
   as = 'p',
@@ -95,6 +121,9 @@ const Text = ({
     banner: isLarge ? BannersBigText : BannersSmallText,
     base: StyledBase,
     logo: LogoText,
+    largest: LargestText,
+    large: LargeText,
+    smallest: SmallestText,
   }
 
   const VariantText = variants[variant]

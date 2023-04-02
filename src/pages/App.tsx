@@ -1,3 +1,4 @@
+import AboutApp from 'src/modules/AboutApp'
 import Banner from 'src/modules/Banner'
 import Footer from 'src/modules/Footer'
 import Header from 'src/modules/Header'
@@ -12,6 +13,7 @@ const App = (): JSX.Element => {
       <Main>
         <Banner />
         <Partners />
+        <AboutApp />
       </Main>
       <Footer />
     </Wrapper>
