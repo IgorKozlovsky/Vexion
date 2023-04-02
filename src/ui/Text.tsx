@@ -97,6 +97,12 @@ const SmallestText = styled(StyledBase)(
     `,
 )
 
+const MediumText = styled(StyledBase)(
+  ({ theme }) => `
+        font-size: ${theme.fontSizes.medium};
+    `,
+)
+
 type TextTypes = StyledPropsTypes & {
   children: ReactNode
   variant?: FontVariants
@@ -124,6 +130,7 @@ const Text = ({
     largest: LargestText,
     large: LargeText,
     smallest: SmallestText,
+    medium: MediumText,
   }
 
   const VariantText = variants[variant]

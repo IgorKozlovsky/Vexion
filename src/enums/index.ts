@@ -16,4 +16,5 @@ export enum FontVariants {
   largest = 'largest',
   large = 'large',
   smallest = 'smallest',
+  medium = 'medium',
 }

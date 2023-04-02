@@ -4,6 +4,7 @@ import Footer from 'src/modules/Footer'
 import Header from 'src/modules/Header'
 import Join from 'src/modules/Join'
 import Partners from 'src/modules/Partners'
+import Pricing from 'src/modules/Pricing'
 import Main from 'src/ui/Main'
 import Wrapper from 'src/ui/Wrapper'
 
@@ -16,6 +17,7 @@ const App = (): JSX.Element => {
         <Partners />
         <AboutApp />
         <Join />
+        <Pricing />
       </Main>
       <Footer />
     </Wrapper>

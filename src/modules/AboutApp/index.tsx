@@ -3,7 +3,6 @@ import { FontVariants } from 'src/enums'
 import { StyledImageText } from 'src/styles'
 import Button from 'src/ui/Button'
 import Flex from 'src/ui/Flex'
-import Image from 'src/ui/Image'
 import Section from 'src/ui/Section'
 import Text from 'src/ui/Text'
 import {

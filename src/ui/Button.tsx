@@ -31,7 +31,7 @@ const LightButton = styled(StyledBase)`
     box-shadow: ${theme.shadows.buttonWhite};
     background: url(${pathToBlur}), #ffffff;
     background-repeat: no-repeat;
-    background-position: 30% 50%;
+    background-position: 43% 50%;
   `}
 `
 
@@ -41,16 +41,12 @@ const DarkButton = styled(StyledBase)`
     box-shadow: ${theme.shadows.buttonBlack};
     background: linear-gradient(0deg, #000000, #000000),
       linear-gradient(
-        180deg,
-        rgba(230, 221, 254, 0.15) -4.86%,
-        rgba(230, 221, 254, 0) 100%
-      ),
-      linear-gradient(
         360deg,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.05) 100%
       );
-    border: 2px solid #e6ddfe23;
+    box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.1);
+    border: 1px solid #e6ddfe23;
   `}
 `
 
