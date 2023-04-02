@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 import Flex from 'src/ui/Flex'
-import { LiType } from 'src/modules/Pricing/types'
+import { ActiveType } from 'src/types'
 
 export const PricingWrapper = styled(Flex)`
   flex-direction: column;
@@ -15,7 +15,7 @@ export const PricingBoxes = styled(Flex)`
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-  width: 100%;
+  width: 220px;
   &:nth-child(2) {
     background: linear-gradient(
       360deg,
@@ -31,7 +31,7 @@ export const Ul = styled('ul')`
   margin: 0;
   padding-inline-start: 12px;
 `
-export const Li = styled('li')<LiType>`
+export const Li = styled('li')<ActiveType>`
   ${({ theme, active }) => `
   font-size: ${theme.fontSizes.smallest};
   color: ${active ? theme.colors.light : theme.colors.subText};

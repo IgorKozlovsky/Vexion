@@ -1,10 +1,7 @@
 import { pathToAssets } from 'src/constants'
-import { FontVariants } from 'src/enums'
 import Button from 'src/ui/Button'
 import Flex from 'src/ui/Flex'
-import Image from 'src/ui/Image'
 import Section from 'src/ui/Section'
-import Text from 'src/ui/Text'
 import {
   BackgroundConnections,
   JoinBox,
@@ -19,6 +16,7 @@ const Join = (): JSX.Element => {
           width: '100%',
           justifyContent: 'center',
           position: 'relative',
+          marginTop: '200px',
         }}
       >
         <JoinBox>
