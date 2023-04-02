@@ -17,7 +17,7 @@ import { pathToAssets } from 'src/constants'
 
 const Internet = () => {
   return (
-    <Section>
+    <Section id="integrations">
       <InternetWrapper>
         <Flex
           style={{

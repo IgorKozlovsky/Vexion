@@ -5,22 +5,22 @@ import { Link } from 'src/modules/Header/types'
 export const links: Link[] = [
   {
     id: nanoid(),
-    url: '',
-    text: 'Pricing',
-  },
-  {
-    id: nanoid(),
-    url: '',
+    href: '#features',
     text: 'Features',
   },
   {
     id: nanoid(),
-    url: '',
+    href: '#integrations',
     text: 'Integrations',
   },
   {
     id: nanoid(),
-    url: '',
+    href: '#pricing',
+    text: 'Pricing',
+  },
+  {
+    id: nanoid(),
+    href: '#company',
     text: 'Company',
   },
 ]

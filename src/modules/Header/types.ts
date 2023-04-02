@@ -1,6 +1,6 @@
 export type Link = {
   id: string
-  url: string
+  href: string
   text: string
 }
 

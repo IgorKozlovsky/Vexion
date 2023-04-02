@@ -22,9 +22,20 @@ const Header = (): JSX.Element => {
     >
       <Logo />
       <TextContainer open={openNavigation} as="nav">
-        {links.map(({ id, url, text }) => (
-          <StyledLinks key={id} variant={FontVariants.subText}>
-            {text}
+        {links.map(({ id, href, text }) => (
+          <StyledLinks
+            key={id}
+            variant={FontVariants.subText}
+            onClick={() => handleMenu(false)}
+          >
+            <a
+              href={href}
+              style={{
+                all: 'unset',
+              }}
+            >
+              {text}
+            </a>
           </StyledLinks>
         ))}
       </TextContainer>

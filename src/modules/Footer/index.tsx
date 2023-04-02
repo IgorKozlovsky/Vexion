@@ -15,10 +15,7 @@ import Text from 'src/ui/Text'
 
 const Footer = (): JSX.Element => {
   return (
-    <FooterWrapper
-      flexDirection="column"
-      style={{ gap: '40px', marginBottom: '50px' }}
-    >
+    <FooterWrapper flexDirection="column" id="company">
       <BoxLogo
         flexDirection="row"
         justifyContent="space-between"

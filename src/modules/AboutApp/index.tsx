@@ -17,7 +17,7 @@ import Box from 'src/ui/Box'
 
 const AboutApp = (): JSX.Element => {
   return (
-    <Section>
+    <Section id="features">
       <Flex
         style={{
           flexDirection: 'column',

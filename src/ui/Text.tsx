@@ -9,6 +9,7 @@ import { FontVariants } from 'src/enums'
 type StyledPropsTypes = {
   color?: string
   fontSize?: string
+  onClick?: () => void
 }
 
 const StyledBase = styled('p')<StyledPropsTypes>(

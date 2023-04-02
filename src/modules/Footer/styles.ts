@@ -8,6 +8,8 @@ export const FooterWrapper = styled(Flex)`
   width: 100%;
   margin: 0 auto;
   margin-top: 40px;
+  gap: 40px;
+  margin-bottom: 50px;
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     max-width: 1820px;
     margin-top: 50px;

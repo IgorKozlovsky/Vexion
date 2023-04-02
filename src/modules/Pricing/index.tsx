@@ -10,7 +10,7 @@ import Box from 'src/ui/Box'
 
 const Pricing = (): JSX.Element => {
   return (
-    <Section>
+    <Section id="pricing">
       <Flex
         style={{
           flexDirection: 'column',

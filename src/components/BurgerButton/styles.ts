@@ -9,7 +9,7 @@ type BurgerButtonPropsType = {
 
 export const BurgerButtonStyles = styled(Box)<BurgerButtonPropsType>`
   ${({ theme, open }) => css`
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 10px;
     display: flex;
